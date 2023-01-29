@@ -1,13 +1,14 @@
 
-header {
-    background-color: blue; 
-    text-align: center;  
-}
 h1 {
     font-family: 'Comic Neue bold', cursive;
 }
-#navbar {
-    width: 260px;
-    right: 40px;
+
+#columna1 {
+    background-color: lightblue;
+    font-family: 'Comic Neue bold', cursive;
+    font-size: 0.5cm;
 }
 
+h3 {
+    
+}
