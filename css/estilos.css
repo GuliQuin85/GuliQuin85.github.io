@@ -1,7 +1,13 @@
 
-header{
-    background-color: blue;   
+header {
+    background-color: blue; 
+    text-align: center;  
 }
 h1 {
-    background-color: lightgreen;
+    font-family: 'Comic Neue bold', cursive;
 }
+#navbar {
+    width: 260px;
+    right: 40px;
+}
+
