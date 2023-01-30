@@ -1,11 +1,4 @@
 
-document.getElementById("modo_oscuro").addEventListener("click", function () {
-    console.log("Cambiar colores");
-    document.body.style.backgroundColor = "black";
-});
-
-
-
 window.addEventListener('load', iniciar, false);
 
 function iniciar() {      
