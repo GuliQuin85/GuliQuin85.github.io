@@ -1,14 +1,16 @@
 
-h1 {
+h1, p {
     font-family: 'Comic Neue bold', cursive;
-}
-
-#columna1 {
-    background-color: lightblue;
-    font-family: 'Comic Neue bold', cursive;
-    font-size: 0.5cm;
 }
 
 h3 {
-    
+    font-family: 'Satisfy', cursive;
+}
+
+#columna2 {
+    background-color: lightblue;
+}
+
+#letraroboto {
+    font-family: 'Roboto', sans-serif;
 }

@@ -12,78 +12,183 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-      <div class="container-fluid p-5 bg-primary text-white text-center">
-        <h1>CV Gonzalo Quintana</h1>
-      </div>
-
-
-      <div class="container text-center">
+    <header id="inicio">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#informacionpersonal">Información Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacion">Educación</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#idiomas">Idiomas</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container p-5 bg-primary text-white text-center">
         <div class="row">
-          <div class="col" id="columna1">
-            <img src="imagenes/Imagen CV.jpg" alt="Imagen CV" width="150" height="175" title="Gonzalo Quintana"/>
-            <h3 id="informacionpersonal">Información Personal</h3>
-            <p>Prueba</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-           </ul>
+          <div class="col-sm-3" id="title1">
+            <img src="imagenes/Imagen CV.jpg"  class="rounded-circle align-middle" alt="Imagen CV" 
+              width="150" height="200" title="Gonzalo Quintana"
+            />
           </div>
-          <div class="col">
-          </div>
-          <div class="col">
+          <div class="col-sm-9 text-center my-5" id="title2">
+            <h1 class="display-3 align-middle">Gonzalo Quintana</h1>
+            <p class="display-6">Desarrollador Front End</p>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="informacionpersonal">
-
-      <a href="https://www.linkedin.com/in/gjquintana-gq?trk=profile-badge" target="_blank" title="Perfil LinkedIn">
-        <img src="imagenes/linkedin.png" alt="Link a linkedin" width="75" height="45" />
-      </a>
-
-      <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
-        data-theme="light" data-type="VERTICAL" data-vanity="gjquintana-gq" data-version="v1">
-        <a class="badge-base__link LI-simple-link" target="_blank" title="Perfil LinkedIn"
-          href="https://ar.linkedin.com/in/gjquintana-gq?trk=profile-badge">
-          <img src="imagenes/Logo-LinkedIn-1.jpg" alt="Link a linkedin" width="150" height="50" id="linkedin"/>
-        </a>
-      </div>
-              
-
-    </section>
-    <button type="button" id="boton_atras">Deshacer cambios</button>
-
-    <footer>
+    <section>
       <div class="container text-center">
         <div class="row">
-          <div class="col">
+          <div class="col-sm-4" id="columna1">
+            <h3 class="my-5 display-6" id="informacionpersonal">Información Personal</h3>
+            <ul>
+              <li class="letraroboto">
+                <img src="imagenes/celular.png" width="30" height="30" />
+                <a class="fab fa-whatsapp" 
+                  href="https://wa.me/5491112345678/?text=Consulta%20sobre%20el%20curso"
+                  target="_blank">
+                  <img src="imagenes/wp.jfif" width="30" height="30" />
+                </a>
+                <p>1512345678</p>
+              </li>
+              <li class="letraroboto">
+                <a href="mailto:gonzalo.quintana@mail.com?Subject=Interesado%20en%20el%20curso">
+                  <img src="imagenes/mail.png" width="30" height="30" />
+                </a>
+                <p>gonzalo.quintana@mail.com</p>
+              </li>
+              <li class="letraroboto">
+                <img src="imagenes/casa.png" width="30" height="30" />
+                <p>Calle Falsa 123,</p>
+                <p>Localidad Falsa, Provincia Falsa</p>
+              </li>
+              <li class="letraroboto">
+                <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" 
+                  data-theme="light" data-type="VERTICAL" data-vanity="gjquintana-gq" data-version="v1">
+                  <a class="badge-base__link LI-simple-link" target="_blank" title="Perfil LinkedIn"
+                    href="https://ar.linkedin.com/in/gjquintana-gq?trk=profile-badge">
+                    <img alt="Link a linkedin"
+                      srcset="imagenes/linkedin.png 320w,
+                      imagenes/linkedin.png 480w,
+                      imagenes/Logo-LinkedIn-1.jpg 800w"
+                      sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px" 
+                      src="imagenes/Logo-LinkedIn-1.jpg"
+                      width="100" height="25" id="linkedin"
+                    />
+                  </a>
+                </div>
+              </li>
+            </ul>
+            <h3 class="my-5 display-6" id="cursos">Cursos</h3>
+            <ul>
+              <li class="letraroboto">Argentina Programa 4.0</li>
+              <li class="letraroboto">Macros Nivel Avanzado</li>
+              <li class="letraroboto">Excel Nivel Avanzado</li>
+              <li class="letraroboto">VB6</li>
+            </ul>
+            <h3 class="my-5 display-6" id="idiomas">Idiomas</h3>
+            <ul>
+              <li class="letraroboto">Inglés</li>
+              <li class="letraroboto">Portugués</li>
+              <li class="letraroboto">Alemán</li>
+            </ul>
           </div>
-          <div class="col">
-          </div>
-          <div class="col">
-            <nav>
-                <ul>
-                   <li><a href="#informacionpersonal">Información Personal</a></li>
-                   <li><a href="#">Experiencia</a></li>
-                   <li><a href="#">Estudios</a></li>
-                   <li><a href="#">Referencias</a></li>
-                </ul>
-            </nav>
-          </div>
-          <div class="col">
+          <div class="col-sm-8" id="columna2">
+            <h3 class="my-5 display-6" id="perfil">Perfil</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aenean tempor vulputate condimentum
+              luctus sociosqu, vel fringilla in ullamcorper vivamus rutrum tellus vehicula dictumst nunc
+            </p>
+            <h3 class="my-5 display-6" id="educacion">Educación</h3>
+            <h4>Universidad</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aenean tempor vulputate condimentum
+              luctus sociosqu, vel fringilla in ullamcorper vivamus rutrum tellus vehicula dictumst nunc
+              nec leo. Cursus mi malesuada dis sem viverra tincidunt habitant imperdiet himenaeos, 
+              condimentum massa urna vehicula justo pretium netus.
+            </p>
+            <h4>Secundaria</h4>
+            <p>Est praesent sem eros gravida diam phasellus netus imperdiet, fringilla auctor senectus
+              nisl natoque convallis duis, fusce platea non montes placerat magnis penatibus. Massa 
+              blandit risus volutpat commodo et justo est cursus nullam dui, proin placerat litora 
+              praesent aenean dignissim dapibus etiam mi conubia, accumsan suscipit turpis ac cubilia 
+              convallis torquent at vestibulum.
+            </p>
+            <h3 class="my-5 display-6" id="experiencia">Experiencia</h3>
+            <h4>Trabajo 1</h4>
+            <h5>Desde 01/01/2020 a Actualidad</h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit vel eget.</li>
+              <li>Erat mus fames fermentum sodales, natoque felis.</li>
+              <li>Eros auctor sem porta diam, non dui tincidunt.</li>
+              <li>Natoque gravida nullam nam ac facilisi netus, sociis sociosqu at tristique.</li>
+            </ul>
+            <h4>Trabajo 2</h4>
+            <h5>Desde 01/01/2015 a 31/12/2019</h5>
+            <ul>
+              <li>Lorem ipsum dolor sit amet consectetur, adipiscing elit vel eget.</li>
+              <li>Erat mus fames fermentum sodales, natoque felis.</li>
+              <li>Eros auctor sem porta diam, non dui tincidunt.</li>
+              <li>Natoque gravida nullam nam ac facilisi netus, sociis sociosqu at tristique.</li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
+
+    <footer>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#informacionpersonal">Información Personal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#perfil">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#educacion">Educación</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#idiomas">Idiomas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </footer>
+    
     <script src="js/function.js"></script>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer 
+      type="text/javascript">
+    </script>
 
 </body>
 </html>
